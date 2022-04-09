@@ -1,10 +1,10 @@
 package cn.dustchat;
 
-/**
- * Hello world!
- */
+import java.net.InetSocketAddress;
+
 public class App {
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        ClientServer clientServer = new ClientServer(new InetSocketAddress(8888));
+        clientServer.start();
     }
 }
